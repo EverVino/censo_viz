@@ -1,4 +1,4 @@
 renv::init()
-install.packages(c("dplyr"))
+install.packages(c("dplyr", "haven"))
 renv::snapshot()
 
