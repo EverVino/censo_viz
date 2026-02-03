@@ -13,3 +13,10 @@ Los departamento de Bolivia tiene asignado un codigo que facilita su identificac
 8 Beni
 9 Pando
 ```
+
+En la columna p03 se identifica a clasifica a la poblacion como hombre y mujer.
+
+```
+1 Hombre
+2 Mujer
+```

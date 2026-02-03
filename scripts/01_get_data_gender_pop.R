@@ -25,6 +25,7 @@ for (dep_id in 1:9) {
         group_by(rango_edad, genero) %>%
         summarize(total = sum(cantidad), .groups = "drop") %>%
         mutate(dep = dep_id)
+      
     resultados[[dep_id]] <- to_write
 }
 
