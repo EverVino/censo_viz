@@ -2,3 +2,4 @@ data/raw/
 renv/
 .Rprofile
 .Rproj.user
+.RData
