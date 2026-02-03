@@ -3,3 +3,4 @@ renv/
 .Rprofile
 .Rproj.user
 .RData
+.Rhistory
