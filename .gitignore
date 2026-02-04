@@ -5,4 +5,4 @@ renv/
 .RData
 .Rhistory
 .Renviron
-.cache/n
+.cache/
