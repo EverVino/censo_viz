@@ -2,6 +2,7 @@ library("ggplot2")
 library("readr")
 library("dplyr")
 
+
 df <- read_csv("data/processed/poblacion_genero_bolivia.csv")
 
 head(df)
@@ -24,7 +25,7 @@ poblacion_total_lp <- sum(poblacion_lp$total)
 poblacion_total_lp
 head(poblacion_lp)
 
-ggplot(poblacion_lp, 
+p <- ggplot(poblacion_lp, 
        aes(x = rango_edad, 
            y = ifelse(genero == 1, -total, total), 
            fill = factor(genero)
@@ -33,10 +34,9 @@ ggplot(poblacion_lp,
   geom_col() +
   geom_text(label= poblacion_lp$porcentaje, stat = "identity", 
             hjust=ifelse(test = poblacion_lp$genero == 1,  yes = -0.25, no = 1.25),
-            color="white", fontface="bold", size=3)+
+            color="white", fontface="bold", size=4.5)+
   scale_y_continuous(labels = abs) +
   coord_flip() +
-  #labs(title = "Piramide poblacional - La Paz (1976)", y = "Poblacion", x ="Rango de Edad", fill="Genero") +
   theme_minimal() +
   scale_fill_manual(
     values = c("steelblue", "tomato"),
@@ -52,10 +52,17 @@ ggplot(poblacion_lp,
     panel.grid.major.x = element_blank(), 
     panel.grid.minor.x = element_blank(),
     axis.text.x=element_blank(), 
-    axis.text.y=element_text( size=15),
+    axis.text.y=element_text(size=15),
     strip.text.x=element_text(size=15),
     legend.position="bottom",
-    legend.text=element_text(size=20)
+    legend.text=element_text(size=20),
+    plot.margin = margin(20, 20, 20, 20)
   )
 
-
+ggsave(
+  "figures/piramide_lp_1976.svg",
+  p,
+  width = 4.5,
+  height = 8,
+  units = "in"
+)

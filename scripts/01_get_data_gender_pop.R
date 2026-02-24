@@ -12,8 +12,8 @@ for (dep_id in 1:9) {
         summarize(cantidad = n(), .groups = "drop") %>%
         mutate(
             rango_edad = ifelse(
-                p04 >= 80,
-                "80+",
+                p04 >= 100,
+                "100+",
                 paste0(
                     floor(p04/5)*5,
                     "-",
