@@ -10,23 +10,6 @@ ndf$cantidad <- as.integer(ndf$cantidad)
 head(ndf)
 str(ndf)
 
-to_write <- ndf %>% 
-  filter(dep==1) %>% 
-  mutate(rango_edad=ifelse(
-    edad >= 100,
-    "100+",
-    paste0(
-      floor(edad/5)*5,
-      "-",
-      floor(edad/5)*5 + 4
-    )
-  )
-  ) %>%
-  group_by(rango_edad, sexo) %>%
-  summarize(total = sum(cantidad), .groups = "drop")
-
-head(to_write)
-
 resultados <- list()
 
 for (dep_id in 1:9) {
