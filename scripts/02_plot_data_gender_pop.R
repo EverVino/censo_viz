@@ -3,15 +3,14 @@ library("readr")
 library("dplyr")
 
 
-df <- read_csv("data/processed/poblacion_genero_bolivia.csv")
+df <- read_csv("data/processed/poblacion_genero_bolivia_1976.csv")
 
 head(df)
-poblacion_total <- sum(df$total)
-poblacion_total
 
-
-poblacion_lp <- df %>%
-  filter(dep == 2) %>%
+poblacion_lp <- df %>% filter(dep==2)
+poblacion_total_lp <- sum(poblacion_lp$total)
+poblacion_total_lp
+poblacion_lp <- poblacion_lp %>%
   mutate(
   edad_inicio = as.integer(sub("-.*|\\+", "", rango_edad))
   ) %>%
@@ -21,8 +20,6 @@ poblacion_lp <- df %>%
   ) %>%
   mutate(porcentaje=paste(round(total/poblacion_total_lp*100,2),"%",sep=""))
 
-poblacion_total_lp <- sum(poblacion_lp$total)
-poblacion_total_lp
 head(poblacion_lp)
 
 p <- ggplot(poblacion_lp, 
@@ -55,14 +52,14 @@ p <- ggplot(poblacion_lp,
     axis.text.y=element_text(size=15),
     strip.text.x=element_text(size=15),
     legend.position="bottom",
-    legend.text=element_text(size=20),
-    plot.margin = margin(20, 20, 20, 20)
+    legend.text=element_text(size=15),
+    plot.margin = margin(100, 20, 20, 20)
   )
 
 ggsave(
   "figures/piramide_lp_1976.svg",
   p,
-  width = 4.5,
+  width = 8,
   height = 8,
   units = "in"
 )
