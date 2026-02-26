@@ -4,11 +4,9 @@ library("dplyr")
 
 dep_names <-c("Chuquisaca","La Paz", "Cochabamba", "Oruro", "Potosí", "Tarija", "Santa Cruz", "Beni", "Pando")
 
-df <- read_csv("data/processed/poblacion_genero_bolivia_1976.csv")
+df <- read_csv("data/processed/poblacion_genero_bolivia_2012.csv")
 
 head(df)
-
-resultados <- list()
 
 for (dep_id in 1:9) {
   poblacion_lp <- df %>% filter(dep==dep_id)
@@ -26,13 +24,13 @@ for (dep_id in 1:9) {
   
   p <- ggplot(poblacion_lp, 
               aes(x = rango_edad, 
-                  y = ifelse(genero == 1, -total, total), 
-                  fill = factor(genero)
+                  y = ifelse(sexo == 1, -total, total), 
+                  fill = factor(sexo)
               )
   ) +
     geom_col() +
     geom_text(label= poblacion_lp$porcentaje, stat = "identity", 
-              hjust=ifelse(test = poblacion_lp$genero == 1,  yes = -0.25, no = 1.25),
+              hjust=ifelse(test = poblacion_lp$sexo == 1,  yes = -0.25, no = 1.25),
               color="white", fontface="bold", size=4.5)+
     scale_y_continuous(labels = abs) +
     coord_flip() +
@@ -56,7 +54,7 @@ for (dep_id in 1:9) {
       legend.text=element_text(size=15),
       plot.margin = margin(100, 20, 20, 20)
     )
-  figure_path <- paste0("figures/piramide_", dep_names[dep_id],"_1976.svg")
+  figure_path <- paste0("figures/piramide_", dep_names[dep_id],"_2012.svg")
   print(figure_path)
   print(poblacion_total_lp)
   ggsave(
