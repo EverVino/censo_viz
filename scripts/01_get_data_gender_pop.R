@@ -30,5 +30,5 @@ for (dep_id in 1:9) {
 }
 
 final <- bind_rows(resultados)
-write.csv(final, "data/processed/poblacion_genero_bolivia_1976.csv", row.names = FALSE)
+write.csv(final, "data/processed/poblacion_genero_bolivia.csv", row.names = FALSE)
 
