@@ -53,8 +53,8 @@
      inkscape:deskcolor="#505050"
      inkscape:document-units="pt"
      inkscape:zoom="1.5026042"
-     inkscape:cx="240.58232"
-     inkscape:cy="353.38648"
+     inkscape:cx="240.91507"
+     inkscape:cy="353.38647"
      inkscape:window-width="2560"
      inkscape:window-height="1372"
      inkscape:window-x="0"
@@ -951,38 +951,41 @@
      id="path1"
      style="stroke-width:0.110909" />
   <g
-     id="g125"
-     transform="translate(0.10938)">
-    <rect
-       x="32.999996"
-       y="530"
-       width="15.86"
-       height="15.86"
-       style="fill:#277da1;fill-opacity:1;stroke:none;stroke-width:1.07;stroke-linecap:butt;stroke-linejoin:miter"
-       id="rect127-5" />
-    <rect
-       x="122.09999"
-       y="530"
-       width="15.86"
-       height="15.86"
-       style="fill:#f94144;fill-opacity:1;stroke:none;stroke-width:1.07;stroke-linecap:butt;stroke-linejoin:miter"
-       id="rect128-3" />
-    <text
-       x="259.01001"
-       y="547.33002"
-       style="font-size:15px;font-family:Arial;fill:#696969;fill-opacity:1"
-       textLength="60.860001"
-       lengthAdjust="spacingAndGlyphs"
-       id="text128-5"
-       transform="translate(-203.96001,-4.02002)">Hombres</text>
-    <text
-       x="348.10999"
-       y="547.33002"
-       style="font-size:15px;font-family:Arial;fill:#696969;fill-opacity:1"
-       textLength="53.360001"
-       lengthAdjust="spacingAndGlyphs"
-       id="text129-6"
-       transform="translate(-203.96001,-4.02002)">Mujeres</text>
+     id="g1">
+    <g
+       id="g125"
+       transform="translate(0.10938)">
+      <rect
+         x="32.999996"
+         y="530"
+         width="15.86"
+         height="15.86"
+         style="fill:#277da1;fill-opacity:1;stroke:none;stroke-width:1.07;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect127-5" />
+      <rect
+         x="122.09999"
+         y="530"
+         width="15.86"
+         height="15.86"
+         style="fill:#f94144;fill-opacity:1;stroke:none;stroke-width:1.07;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect128-3" />
+      <text
+         x="259.01001"
+         y="547.33002"
+         style="font-size:15px;font-family:Arial;fill:#696969;fill-opacity:1"
+         textLength="60.860001"
+         lengthAdjust="spacingAndGlyphs"
+         id="text128-5"
+         transform="translate(-203.96001,-4.02002)">Hombres</text>
+      <text
+         x="348.10999"
+         y="547.33002"
+         style="font-size:15px;font-family:Arial;fill:#696969;fill-opacity:1"
+         textLength="53.360001"
+         lengthAdjust="spacingAndGlyphs"
+         id="text129-6"
+         transform="translate(-203.96001,-4.02002)">Mujeres</text>
+    </g>
   </g>
   <text
      xml:space="preserve"
