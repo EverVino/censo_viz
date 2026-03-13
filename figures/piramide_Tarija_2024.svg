@@ -101,8 +101,8 @@
      inkscape:deskcolor="#505050"
      inkscape:document-units="pt"
      inkscape:zoom="1.0238317"
-     inkscape:cx="207.06528"
-     inkscape:cy="362.36425"
+     inkscape:cx="207.55364"
+     inkscape:cy="362.36424"
      inkscape:window-width="2560"
      inkscape:window-height="1372"
      inkscape:window-x="0"
@@ -994,40 +994,36 @@
        lengthAdjust="spacingAndGlyphs"
        id="text127">100+</text>
   </g>
-  <g
-     id="g177"
-     transform="translate(0.79688,7.6873447)">
-    <rect
-       x="33.109375"
-       y="530"
-       width="15.86"
-       height="15.86"
-       style="fill:#c32f27;fill-opacity:1;stroke:none;stroke-width:1.07;stroke-linecap:butt;stroke-linejoin:miter"
-       id="rect127-5" />
-    <rect
-       x="122.20937"
-       y="530"
-       width="15.86"
-       height="15.86"
-       style="fill:#ff6000;fill-opacity:1;stroke:none;stroke-width:1.07;stroke-linecap:butt;stroke-linejoin:miter"
-       id="rect128-3" />
-    <text
-       x="259.01001"
-       y="547.33002"
-       style="font-size:15px;font-family:Arial;fill:#696969;fill-opacity:1"
-       textLength="60.860001"
-       lengthAdjust="spacingAndGlyphs"
-       id="text128-5"
-       transform="translate(-203.85063,-4.02002)">Hombres</text>
-    <text
-       x="348.10999"
-       y="547.33002"
-       style="font-size:15px;font-family:Arial;fill:#696969;fill-opacity:1"
-       textLength="53.360001"
-       lengthAdjust="spacingAndGlyphs"
-       id="text129-6"
-       transform="translate(-203.85063,-4.02002)">Mujeres</text>
-  </g>
+  <rect
+     x="33.906254"
+     y="537.68732"
+     width="15.86"
+     height="15.86"
+     style="fill:#c32f27;fill-opacity:1;stroke:none;stroke-width:1.07;stroke-linecap:butt;stroke-linejoin:miter"
+     id="rect127-5" />
+  <rect
+     x="123.00626"
+     y="537.68732"
+     width="15.86"
+     height="15.86"
+     style="fill:#ff6000;fill-opacity:1;stroke:none;stroke-width:1.07;stroke-linecap:butt;stroke-linejoin:miter"
+     id="rect128-3" />
+  <text
+     x="259.01001"
+     y="547.33002"
+     style="font-size:15px;font-family:Arial;fill:#696969;fill-opacity:1"
+     textLength="60.860001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text128-5"
+     transform="translate(-203.05375,3.6673247)">Hombres</text>
+  <text
+     x="348.10999"
+     y="547.33002"
+     style="font-size:15px;font-family:Arial;fill:#696969;fill-opacity:1"
+     textLength="53.360001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text129-6"
+     transform="translate(-203.05375,3.6673247)">Mujeres</text>
   <text
      xml:space="preserve"
      style="font-size:24px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;opacity:0.843573;fill:#4d4d4d;fill-opacity:1;stroke-width:0.566929;stroke-opacity:0.84391;paint-order:stroke fill markers"
@@ -1086,4 +1082,34 @@
        x="0"
        y="0" />
   </g>
+  <rect
+     x="33.906254"
+     y="537.68732"
+     width="15.86"
+     height="15.86"
+     style="fill:#c32f27;fill-opacity:1;stroke:none;stroke-width:1.07;stroke-linecap:butt;stroke-linejoin:miter"
+     id="rect3" />
+  <rect
+     x="123.00626"
+     y="537.68732"
+     width="15.86"
+     height="15.86"
+     style="fill:#ff6000;fill-opacity:1;stroke:none;stroke-width:1.07;stroke-linecap:butt;stroke-linejoin:miter"
+     id="rect4" />
+  <text
+     x="259.01001"
+     y="547.33002"
+     style="font-size:15px;font-family:Arial;fill:#696969;fill-opacity:1"
+     textLength="60.860001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text4"
+     transform="translate(-203.05375,3.6673247)">Hombres</text>
+  <text
+     x="348.10999"
+     y="547.33002"
+     style="font-size:15px;font-family:Arial;fill:#696969;fill-opacity:1"
+     textLength="53.360001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text5"
+     transform="translate(-203.05375,3.6673247)">Mujeres</text>
 </svg>
